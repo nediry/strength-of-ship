@@ -61,7 +61,7 @@ for i in range(100):
     if posta[i] > 19 * boy / 20:
         Ix[i] = .5 * Iy - 10 * (Iy / boy) * (posta[i] - 19 * boy / 20)
 
-ax = 1.005 * alan[:, 5] * yogunluk
+ax = alan[:, 5] * yogunluk
 px = ax - qx
 dpx0 = np.array([0, *cumtrapz(px, posta)])
 dpx = dpx0 - dpx0[-1] * posta / boy  # LİNEER DÜZELTME (%0.03dpx.son<dpx.max [M. Savcı])
