@@ -142,7 +142,7 @@ def hesapla(offset, boy, genislik, draft, yogunluk):
     Ix = ataletDagilimi(boy, posta) # GEMİNİN ATALET DAĞILIMI
     
     # SAKİN SU
-    ax = 1.005 * alan[:, 5] * yogunluk
+    ax = alan[:, 5] * yogunluk
     Qx, Mx, gerilme = gerilmeHesabi("sakin", boy, deplasman, ax, qx, Ix, posta, ymax)
     # BURADA Qx, Mx VE gerilme 'Yİ BELİRLİ BİR ORAN İLE BÖLÜNÜR
     # BU ORANLARI KENDİ DEĞERLERİNİZ İLE DEĞİŞTİRMEYİ UNUTMAYINIZ
